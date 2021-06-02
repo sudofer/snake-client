@@ -14,6 +14,7 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("connected!!");
     conn.write("Name: AFM");
+    conn.write("Move: up");
   });
 
   conn.on("data", (data) => {
