@@ -13,6 +13,7 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log("connected!!");
+    conn.write("Name: AFM");
   });
 
   conn.on("data", (data) => {
